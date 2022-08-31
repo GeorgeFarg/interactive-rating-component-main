@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hello">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  
+</head>
+<body>
+
+<main>
+  <div class="start">
+    <img src="./images/icon-star.svg" alt="Start-icon" />
+  </div>
+  
+  <div class="header">
+    <h1>How did we do?</h1>
+  </div>
+    <p class="info">Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+
+  <form method="get">
+    <div class="inputs">
+      <input type="radio" name="radio" value="1" id="1" />
+      <label for="1">1</label>
+
+      <input type="radio" name="radio" value="2" id="2" />
+      <label for="2">2</label>
+      
+      <input type="radio" name="radio" value="3" id="3" />
+      <label for="3">3</label>
+      
+      <input type="radio" name="radio" value="4" id="4" />
+      <label for="4">4</label>
+      
+      <input type="radio" name="radio" value="5" id="5" />
+      <label for="5">5</label>
+    </div>
+
+    <div class="button">
+    <button type="submit" id="button">submit</button>
+    <span>You did't choose anything</span>
+    </div>
+  </form>
+
+</main>
+</body>
+
+<script src="./js/main.js"></script>
+</html>

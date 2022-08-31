@@ -1,0 +1,116 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    Font-size: 15px;
+    background-color: var(--Very-Dark-Blue);
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    background-color: var(--Dark-Blue);
+    width: 400px;
+    height: 400px;
+    border-radius: 35px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+}
+
+main .start {
+    margin-bottom: 20px;
+}
+
+main .start img {
+    padding: 15px;
+    border-radius: 50%;
+    background-color: hsl(213deg 14% 29%);
+}
+
+main .header {
+    margin-bottom: 20px;
+}
+
+main .header h1 {
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+
+.info {
+    font-family: 'Overpass', sans-serif;
+    color: var(--Medium-Grey);
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+form .inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form .inputs input[type="radio"] {
+    display: none;
+}
+
+form .inputs label{
+    font-family: 'Overpass', sans-serif;
+    color: var(--Light-Grey);
+    padding: 16px 20px;
+    border-radius: 50%;
+    background-color: hsl(213deg 14% 29%);
+    transition: .25s;
+}
+
+form .inputs label:hover{
+    background-color: var(--Light-Grey);
+    color: white;
+    cursor: pointer;
+}
+
+form .inputs input[type="radio"]:checked + label{   
+    background-color: var(--Orange);
+    color: white;
+}
+
+form .button button {
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--Orange);
+    color: white;
+    border: none;
+    transition: .25s;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+form .button button:hover {
+    background-color: white;
+    color: var(--Orange);
+}
+
+form span {
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    position: relative;
+    margin-left: 80px;
+    display: none;
+}
