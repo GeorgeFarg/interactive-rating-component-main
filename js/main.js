@@ -10,8 +10,8 @@ let myNewElement = document.createElement("div");
 myNewElement.style.textAlign="center";
 
 let image = document.createElement("img");
-image.src = "/images/illustration-thank-you.svg";
-image.alt = "/images/illustration-thank-you.svg";
+image.src = "./images/illustration-thank-you.svg";
+image.alt = "./images/illustration-thank-you.svg";
 
 myNewElement.appendChild(image);
 
